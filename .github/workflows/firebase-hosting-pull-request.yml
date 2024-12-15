@@ -13,7 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm run dev
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '14' # or whatever Node.js version your project needs
+      - run: npm ci # Use npm ci for a clean install based on package-lock.json
+      - run: npm install vite # Explicitly install Vite
+      - run: npm run build # Assuming 'build' is the script for production build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
