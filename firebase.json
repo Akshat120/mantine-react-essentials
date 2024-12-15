@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/react-essentials",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,8 +8,8 @@
     ],
     "rewrites": [
       {
-        "source": "/react-essentials/**",
-        "destination": "/react-essentials/index.html"
+        "source": "**",
+        "destination": "/index.html"
       }
     ]
   }
