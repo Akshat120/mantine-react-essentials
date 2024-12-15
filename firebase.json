@@ -8,8 +8,8 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/react-essentials/**",
+        "destination": "/react-essentials/index.html"
       }
     ]
   }
