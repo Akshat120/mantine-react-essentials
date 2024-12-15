@@ -10,12 +10,6 @@
     padding-bottom: var(--mantine-spacing-md);
   }
   
-  .like {
-    color: var(--mantine-color-red-6);
-    width: 20px;
-    height: 20px;
-  }
-  
   .label {
     text-transform: uppercase;
     font-size: var(--mantine-font-size-xs);
