@@ -13,8 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18' # Update to a recent LTS version
-      - run: npm ci --legacy-peer-deps  # Use if peer dependency issues are suspected
+          node-version: '18' # or latest LTS version
+      - run: npm ci
+      - run: npm install --save-dev @types/node
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -22,3 +23,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO101 }}
           channelId: live
           projectId: portfolio101
+
