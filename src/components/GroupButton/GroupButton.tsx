@@ -35,7 +35,7 @@ export function GroupButton() {
       <Group preventGrowOverflow justify="center" p="md" mt={20} __size={200}>
       {selected!=''? (
         
-          <Paper withBorder p="lg" radius="md" shadow="md">
+          <Paper style={{ width: '80%'}} withBorder p="lg" radius="md" shadow="md">
             <Group justify="space-between" mb="xs">
               <Text fz="xl" fw={500}>
                 {EXAMPLES[selected].title}
@@ -44,7 +44,7 @@ export function GroupButton() {
             <Text c="dimmed" fz="lg">
             {EXAMPLES[selected].description}
             </Text>
-            <Code block>{EXAMPLES[selected].code}</Code>
+            <Code mt={10} block>{EXAMPLES[selected].code}</Code>
           </Paper>
         
       ):  
