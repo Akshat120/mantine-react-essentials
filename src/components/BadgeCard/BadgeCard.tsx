@@ -1,4 +1,4 @@
-import { Badge, Button, Card, Group, Image, Text } from '@mantine/core';
+import { Card, Group, Image, Text } from '@mantine/core';
 import classes from './BadgeCard.module.css';
 
 

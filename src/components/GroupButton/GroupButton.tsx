@@ -1,6 +1,5 @@
-import { Button, Group, Text, Paper } from '@mantine/core';
+import { Button, Group, Text } from '@mantine/core';
 import { useState, useEffect } from 'react';
-import { Code } from '@mantine/core';
 import { EXAMPLES } from '@/data';
 import ExampleContent from '../ExampleContent/ExampleContent';
 
